@@ -1,0 +1,101 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>
+        Test AAA
+      </Title>     
+ 
+      <Description>
+        Test with the AAA (Arrange Act Assert) pattern. 
+      </Description>
+ 
+      <Shortcut>
+        aaa
+      </Shortcut>
+    </Header>
+ 
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Method</ID>
+          <ToolTip>Replace with the name of the method to test.</ToolTip>
+          <Default>Method</Default>
+        </Literal>
+        <Literal>
+          <ID>Case</ID>
+          <ToolTip>Replace with a text which descripe sthe test case.</ToolTip>
+          <Default>Case</Default>
+        </Literal>
+        <Literal>
+          <ID>Result</ID>
+          <ToolTip>Replace with the expected test result.</ToolTip>
+          <Default>Result</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[TestMethod]
+        public void $Method$_$Case$_$Result$()
+        {
+            // Arrange
+            var sut = CreateSut();
+ 
+            // Act
+ 
+ 
+            // Assert
+ 
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>
+        Test AAA async
+      </Title>     
+ 
+      <Description>
+        Test with the AAA (Arrange Act Assert) pattern as async Task. 
+      </Description>
+ 
+      <Shortcut>
+        aaaa
+      </Shortcut>
+    </Header>
+ 
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Method</ID>
+          <ToolTip>Replace with the name of the method to test.</ToolTip>
+          <Default>Method</Default>
+        </Literal>
+        <Literal>
+          <ID>Case</ID>
+          <ToolTip>Replace with a text which descripe sthe test case.</ToolTip>
+          <Default>Case</Default>
+        </Literal>
+        <Literal>
+          <ID>Result</ID>
+          <ToolTip>Replace with the expected test result.</ToolTip>
+          <Default>Result</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[TestMethod]
+        public async Task $Method$_$Case$_$Result$()
+        {
+            // Arrange
+            var sut = CreateSut();
+ 
+            // Act
+ 
+ 
+            // Assert
+ 
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
