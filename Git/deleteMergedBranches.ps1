@@ -1,0 +1,1 @@
+git branch -d @(git branch --merged | %{ $_.Trim() } | Select-String -Pattern @(git rev-parse --abbrev-ref HEAD) -notmatch)
