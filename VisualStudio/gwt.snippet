@@ -1,0 +1,91 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>
+        Test GWT
+      </Title>     
+ 
+      <Description>
+        Test with the GWT (Given When Then) pattern. 
+      </Description>
+ 
+      <Shortcut>
+        gwt
+      </Shortcut>
+    </Header>
+ 
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Method</ID>
+          <ToolTip>Replace with the name of the method to test.</ToolTip>
+          <Default>Method</Default>
+        </Literal>
+        <Literal>
+          <ID>Case</ID>
+          <ToolTip>Replace with a text which descripe sthe test case.</ToolTip>
+          <Default>Case</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[TestMethod]
+        public void $Method$_$Case$()
+        {
+            // given
+            var sut = CreateSut();
+ 
+            // when
+ 
+ 
+            // then
+ 
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>
+        Test GWT async
+      </Title>     
+ 
+      <Description>
+        Test with the GWT (Given When Then) pattern as async Task. 
+      </Description>
+ 
+      <Shortcut>
+        gwta
+      </Shortcut>
+    </Header>
+ 
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Method</ID>
+          <ToolTip>Replace with the name of the method to test.</ToolTip>
+          <Default>Method</Default>
+        </Literal>
+        <Literal>
+          <ID>Case</ID>
+          <ToolTip>Replace with a text which descripe sthe test case.</ToolTip>
+          <Default>Case</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[TestMethod]
+        public async Task $Method$_$Case$()
+        {
+            // given
+            var sut = CreateSut();
+ 
+            // when
+ 
+ 
+            // then
+ 
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
